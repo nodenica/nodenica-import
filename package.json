@@ -2,7 +2,6 @@
   "name": "nodenica-import",
   "version": "0.0.1",
   "dependencies": {
-    "mongoose": "^3.8.19",
-    "pg-simple": "^0.2.2"
+    "mongoose": "^3.8.19"
   }
 }
