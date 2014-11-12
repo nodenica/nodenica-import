@@ -13,10 +13,8 @@ models.users.find({
     users.forEach(function(user) {
       var userModel = {};
       userModel.username = user.username.toLowerCase();
-      userModel.credentials = {
-        firstName: user['first_name'],
-        lastName: user['last_name']
-      };
+      userModel['first_name'] = user['first_name'];
+      userModel['last_name'] = user['last_name'];
       userModel.email = user.email;
       userModel.created = user['created_at'];
       userModel.lastUpdated = new Date();
@@ -30,20 +28,3 @@ models.users.find({
     });
   }
 });
-
-/*
-var model = {
-  'realm': '',
-  'username': '',
-  'credentials': 'object',
-  'challenges': 'object',
-  'email': '',
-  'emailVerified': false,
-  'verificationToken': '',
-  'status': '',
-  'created': '',
-  'lastUpdated': '',
-  'id': 0,
-  'member_id': 0
-};
-*/
