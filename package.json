@@ -3,6 +3,7 @@
   "version": "0.0.1",
   "dependencies": {
     "mongoose": "^3.8.19",
+    "randomstring": "^1.0.3",
     "request": "^2.47.0"
   }
 }
